@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    border: 0;
+}
+.main-box{
+    width: 100%;
+    background-color: rgba(16, 16, 85, 0.918);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.fuente3{
+    font-family:'waltograph',serif;
+    text-align: center;
+    font-size: 14em;
+    color: whitesmoke;
+}   
+/* cinzel-700 - latin */
+@font-face {
+     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'waltograph';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/waltograph42.otf'), /* IE9 Compat Modes */
+         url('../fonts/waltographUI.ttf');
+         /*url('../fonts/cinzel-v19-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+}
+.style{
+    font-family: 'Amatic SC';
+    border: 20px;
+    padding: 2px 20px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #BB8FCE;
+}
+   .style:hover{
+    background-color: #ae72c8;
+   }  

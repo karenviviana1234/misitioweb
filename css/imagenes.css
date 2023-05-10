@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nombre-producto, .precio-producto{
+    margin: 0 14vh;
+    justify-content: center;
+    justify-items: center;
+    color: black;
+    font-size: 1.3em;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nombre-producto{
+    font-size: 1em;
+}
+.precio-producto{
+    font-size: 1.3em;
+    font-weight: 700;
+    
+}
+.box-style{
+    font-family: 'Amatic SC';
+    border: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #BB8FCE;
+}
+   .box-style:hover{
+    background-color: #ae72c8;
+   }
