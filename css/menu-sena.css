@@ -58,6 +58,9 @@ a{
     text-decoration: none;
     border-right: 1px solid green;
 }
+.menu-uno li:hover a {
+	background: palevioletred;
+}
 img{
     margin: 0 14vh;
 }
