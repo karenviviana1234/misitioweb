@@ -42,7 +42,7 @@ img{
 @media only screen and (max-width: 768px){
 	.main-menu{
 		position: fixed;
-		left: -100px;
+		left: -100%;
 		height: 255px;
 		transition: all 1s;
 		text-align: center;
@@ -52,7 +52,7 @@ img{
 	  display: block;
 	  background-color: plum;
 	  width: 100%;
-	  height: 255px;
+	  height: 210px;
 	  transition: all 1s;
 	}
 	.primero-style{
@@ -87,3 +87,19 @@ img{
 		display: none;
 	}
 }
+.style{
+    font-family: 'Amatic SC';
+    border: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #BB8FCE;
+}
+   .style:hover{
+    background-color: #ae72c8;
+   }
