@@ -16,8 +16,15 @@ nav ul {
 	background-color: rgb(12, 11, 11);
 	position: absolute;
 }
+/*Primer menu*/
 .style{
 	margin-left: 50px;
+}
+nav > ul > li {
+    display: inline-block;
+    width: 200px;
+    line-height: 70px;
+    text-align: center;
 }
 nav > ul > li > li:hover {
 	display: inline-block;
@@ -30,7 +37,7 @@ a {
 }
 .main-menu {
     font-family: sans-serif,Verdana,Tahoma;
-	text-align: center;
+	text-align: left;
     text-decoration: none;
 	color: white;
 }
@@ -46,11 +53,11 @@ nav li:hover > ul > li {
     max-height: 500px;
     overflow: visible;
     text-align: center;
-	border-right:  1px solid rgb(162, 70, 180);
-    border-bottom: 1px solid rgb(162, 70, 180);
+	border-right:  1px solid rgb(166, 112, 176);
+    border-bottom: 1px solid rgb(166, 112, 176);
 }
 nav li > ul > li:hover {
-	background-color: plum;
+	background-color: rgb(155, 70, 155);
 	cursor: pointer;
 }
 /*tercer*/
