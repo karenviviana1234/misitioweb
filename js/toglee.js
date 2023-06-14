@@ -2,7 +2,7 @@
 let circuloBox = document.getElementById("primeroBox"); 
 let toggleBox = document.getElementById("toggleBox"); 
 
-circuloBox.addEventListener("click", function(){
+toggleBox.addEventListener("click", function(){
   if (circuloBox.classList.contains("primeroBox")) {
     circuloBox.classList.add("primero-box-on")
     circuloBox.classList.remove("primeroBox")
