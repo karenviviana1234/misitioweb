@@ -1,17 +1,17 @@
-let Principal = document.getElementById("Principal");
-let Primero = document.getElementById("Primero");
 
-Principal.addEventListener("click", function() {
-  if(Primero.classList.contains("primero")) {
-    Primero.classList.add("movedizo");
-    Primero.classList.remove("primero");
-    segundo.classList.add();
-    segundo.classList.remove();
+let circuloBox = document.getElementById("primeroBox"); 
+let toggleBox = document.getElementById("toggleBox"); 
+
+circuloBox.addEventListener("click", function(){
+  if (circuloBox.classList.contains("primeroBox")) {
+    circuloBox.classList.add("primero-box-on")
+    circuloBox.classList.remove("primeroBox")
+    toggleBox.classList.add("toggle-box-on")
+    
   }
   else{
-    Primero.classList.remove("movedizo");
-    Primero.classList.add("primero");
-    segundo.classList.remove();
-    segundo.classList.add();
+    circuloBox.classList.add("primeroBox")
+    circuloBox.classList.remove("primero-box-on")
+    toggleBox.classList.remove("toggle-box-on")
   }
-});
+})
