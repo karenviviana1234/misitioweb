@@ -69,3 +69,19 @@ nav ul ul ul {
 	left: 100%;
 	top: 0;
 }
+.styles{
+    font-family: 'Amatic SC';
+    border: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #BB8FCE;
+}
+   .styles:hover{
+    background-color: #ae72c8;
+   }
