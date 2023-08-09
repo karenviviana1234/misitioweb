@@ -25,6 +25,7 @@ h1{
     background-color: whitesmoke;
     padding: 10px;
     font-size: 17px;
+    border: 1px solid black;
 }
 .dia{
     background-color: rgb(205, 125, 234);
