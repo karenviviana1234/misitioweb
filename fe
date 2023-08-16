@@ -4,24 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetacion</title>
-    <link rel="stylesheet" href="css/maquetacion1.css">
+    <link rel="stylesheet" href="css/maquetaacion.css">
 </head>
 <body>
-    <div  class="main-page">
-        <header class="box">
-            <img  class="logo" src="img/logomaquetas3.png"></img>
-            <nav class="main-nav">
-                <ul id="mainMenu" class="menu">
-                    <li  class="primero-style"><a href="#">Tienda</a></li> 
-                    <li class="primero-style"><a href="#">Sobre Nosotros</a></li> 
-                    <li class="primero-style"><a href="#">Contacto</a>  </li>
-                    <li class="primero-style item-style-last"><a href="#">Mi cuenta</a> </li>
-                </ul>  
-            </nav>        
+    <div class="main-page">
+        <header>
+            <div class="logo"><span class="style-text">Logo</span></div>
+            <div class="main-menu"><span class="style-text">Menu Principal</span></div>
         </header>
         <div class="main-content">
-            <div class="main-img" ></div>
-
+            <div class="main-img"><span class="style-text">Imagen Principal</span></div>
+            
             <div class="article-1">
                 <div class="img-article style-text">Imagen articulo 1</div>
                 <div class="text-article-1 style-text-article">
@@ -57,7 +50,7 @@
                 </div>
 
                 <div class="article-6">
-                    <img class="img-article style-text"  alt="">
+                    <img class="img-article style-text" src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU" alt="">
                     <div >Imagen articulo 6</div>
                     <div class="style-text-article">
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veniam recusandae rerum dolores quaerat mollitia ea velit dolorem nostrum necessitatibus voluptatibus aspernatur minima labore perferendis.</span>
