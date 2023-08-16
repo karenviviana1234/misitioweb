@@ -61,7 +61,7 @@ body{
     border-radius: 10px;
     height: 250px;
     grid-area: article-1;
-    background-color:  rgba(65, 31, 31, 0.7);
+    background-color:  rgb(64, 64, 64,.7);
 }
 .article-1{
     border-radius: 10px;
