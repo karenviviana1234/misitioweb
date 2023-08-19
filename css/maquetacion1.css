@@ -32,22 +32,23 @@ header{
     justify-content: flex-end;
     align-items: center;
 }
-
 .primero-style{
 	display: inline-block;
 	line-height: 50px;
 	padding: 0px 35px;
 	list-style: none;
-	color: white;
+    color: black;
 }
-
+.primero-style:hover{
+    background-color: plum;
+}
 .main-page{
     grid-area: main-page;
 }
 .main-img{
     grid-area: main-img;
     display: grid;
-    text-align: center;
+
     justify-content: center;
     align-items: center;
 }
@@ -63,7 +64,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template: "empty-left           main-page                   empty-right"/
-              minmax(50px, 1fr  )      minmax(150px, 1500px)        minmax(50px, 1fr  )   ;
+              minmax(40px, 1fr  )      minmax(2500px, 2500px)        minmax(40px, 1fr  )   ;
 }
 .main-content{
     margin-bottom: 50px;
