@@ -47,6 +47,7 @@ header{
 .main-img{
     grid-area: main-img;
     display: grid;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
@@ -80,7 +81,7 @@ body{
 
 .style-text{
     display: flex;
-    justify-content: center;
+    justify-content: justify;
     align-items: center;
     font-size: 1.6em;
     color: white;
