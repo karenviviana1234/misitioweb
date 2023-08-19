@@ -46,12 +46,16 @@ header{
 }
 .main-img{
     grid-area: main-img;
-    height: 600px;
-    background-color: url(../img/principal.png);
     display: grid;
     justify-content: center;
     align-items: center;
 }
+.img-article{
+    width: 100%;
+    display: grid;
+    margin-left: 160px;
+    align-items: flex-start;
+ }
 body{
     background-color: #f5f6f7;
     width: 100%;
@@ -84,41 +88,52 @@ body{
 .article{
     height: 250px;
     grid-area: article-1;
-    background-color:  rgb(64, 64, 64,.7);
 }
 .article-1{
     grid-area: article-1;
-    background-color: rgb(64, 64, 64,.7);
 }
 .article-2{  
     grid-area: article-2;
-    background-color: rgb(64, 64, 64,.7);
     }
 .article-3{
     grid-area: article-3;
-    background-color: rgb(64, 64, 64,.7);
  }
  .article-4{
     grid-area: article-4;
-    background-color: rgb(64, 64, 64,.7);
 }
 .article-5{  
     grid-area: article-5;
-    background-color: rgb(64, 64, 64,.7);
     }
 .article-6{
     grid-area: article-6;
-    background-color: rgb(64, 64, 64,.7);
  }
  .text-article-1 {
+    text-align: justify;
     margin-top: 10px;
     grid-area: text-article-1 ;
  }
  .text-article-2{
+    text-align: justify;
     margin-top: 10px;
     grid-area: text-article-2;
  }
  .text-article-3 {
+    text-align: justify;
+    margin-top: 10px;
+    grid-area: text-article-3 ;
+ }
+ .text-article-4 {
+    text-align: justify;
+    margin-top: 10px;
+    grid-area: text-article-1 ;
+ }
+ .text-article-5{
+    text-align: justify;
+    margin-top: 10px;
+    grid-area: text-article-2;
+ }
+ .text-article-6{
+    text-align: justify;
     margin-top: 10px;
     grid-area: text-article-3 ;
  }
@@ -146,7 +161,26 @@ body{
     margin-top: 10px;
     grid-area: nuew-3;
  }
-
- .img-article{
-    width: 100%;
- }
+ @media only screen and (max-width: 600px){
+    .box{
+       display: grid;
+       grid-template-columns: auto;
+       }
+    .main-content{
+       display: grid;
+       grid-template:"main-img  " 
+                     "article-1 " 
+                     "text-article-1 "
+                     "article-2" 
+                     "text-article-2 "
+                     "article-3" 
+                     "text-article-3"
+                     "nuew-1 "
+                     "text-article-1-2 "
+                      "nuew-2"
+                      "text-article-2-2"
+                      "nuew-3"
+                     "text-article-3-2";
+    }
+    }
+ 
