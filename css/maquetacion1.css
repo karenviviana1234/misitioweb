@@ -1,36 +1,42 @@
 *{
-    margin: 0;
+    margin: 10px;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
+.main-page{
+    height: 120px;
+}
+body{
+    background-color: #f5f6f7;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template: "empty-left           main-page                   empty-right"/
+              minmax(50px, 1fr  )      minmax(1000px, 1500px)        minmax(50px, 1fr  )   ;
+}
 header{
     margin-top: 20px;
     width: 100%;
-    height: 120px;
+    height: 90px;
     gap: 20px;
     display: grid;
     grid-template: "logo      main-menu  "/
-                    150px    minmax(150px, 1fr) ;
+                    150px    minmax(1000px, 1fr) ;
 }
 .logo {
-    width: 100px;
+    width: 150px;
 }
-
-.main-page{
+.main-nav{
     grid-area: main-menu;
-    /* background-color: rgb(91, 155, 49); */
-    height: 120px;
-}
+    height: 90px;
+    text-align: left;
+    justify-content: left;}
 .menu {
     font-family: sans-serif,Verdana,Tahoma;
-	text-align: right;
-	color: white;
-	font-size: 1.3em;
+    text-align: right;
+    font-size: 1.3em;
     height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 .primero-style{
 	display: inline-block;
@@ -42,54 +48,20 @@ header{
 .primero-style:hover{
     background-color: plum;
 }
-.main-page{
-    grid-area: main-page;
-}
 .main-img{
-    grid-area: main-img;
-    display: grid;
-
+    width: 100%;
+    height: 1200px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.img-article{
-    width: 100%;
-    display: grid;
-    margin-left: 160px;
-    align-items: flex-start;
- }
-body{
-    background-color: #f5f6f7;
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template: "empty-left           main-page                   empty-right"/
-              minmax(40px, 1fr  )      minmax(2500px, 2500px)        minmax(40px, 1fr  )   ;
-}
 .main-content{
-    margin-bottom: 50px;
-    gap: 50px;
-    margin-top: 10px;
+    width: 100%;
     display: grid;
-    grid-template: "main-img       main-img          main-img " 
-                "article-1         article-2         article-3" 
-                "article-4         article-5         article-6" 
-                "text-article-1    text-article-2    text-article-3"
-                "text-article-4    text-article-5    text-article-6"
-                "nuew-1            nuew-2            nuew-3"
-                "nuew-4            nuew-5            nuew-6";
-}
-
-.style-text{
-    display: flex;
-    justify-content: justify;
-    align-items: center;
-    font-size: 1.6em;
-    color: white;
-}
-.article{
-    height: 250px;
-    grid-area: article-1;
+    gap: 40px;
+    grid-template: "header            main-img          main-img "  
+                   "article-1         article-2         article-3" 
+                   "article-4         article-5         article-6";
 }
 .article-1{
     grid-area: article-1;
@@ -109,60 +81,23 @@ body{
 .article-6{
     grid-area: article-6;
  }
- .text-article-1 {
+ .text-article{
     text-align: justify;
-    margin-top: 10px;
-    grid-area: text-article-1 ;
+    margin-top: 15px;
  }
- .text-article-2{
-    text-align: justify;
-    margin-top: 10px;
-    grid-area: text-article-2;
- }
- .text-article-3 {
-    text-align: justify;
-    margin-top: 10px;
-    grid-area: text-article-3 ;
- }
- .text-article-4 {
-    text-align: justify;
-    margin-top: 10px;
-    grid-area: text-article-1 ;
- }
- .text-article-5{
-    text-align: justify;
-    margin-top: 10px;
-    grid-area: text-article-2;
- }
- .text-article-6{
-    text-align: justify;
-    margin-top: 10px;
-    grid-area: text-article-3 ;
- }
-.nuew-1{
-    margin-top:10px;
-    grid-area: nuew-1 ;
- }
-.nuew-2{
-    margin-top: 10px;
-    grid-area: nuew-2 ;
- }
-.nuew-3{
-    margin-top: 10px;
-    grid-area: nuew-3;
- }
- .nuew-4{
-    margin-top:10px;
-    grid-area: nuew-1 ;
- }
-.nuew-5{
-    margin-top: 10px;
-    grid-area: nuew-2 ;
- }
-.nuew-6{
-    margin-top: 10px;
-    grid-area: nuew-3;
- }
+.img-article{
+    width: 100%;
+    display: grid;
+    margin-left: 35px;
+    align-items: flex-start;
+}
+.style-text{
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    font-size: 1.6em;
+    color: white;
+}
  @media only screen and (max-width: 600px){
     .box{
        display: grid;
@@ -170,12 +105,12 @@ body{
        }
     .main-content{
        display: grid;
-       grid-template:"main-img  " 
-                     "article-1 " 
+       grid-template:"main-img  " 300px
+                     "article-1 " 300px
                      "text-article-1 "
-                     "article-2" 
+                     "article-2" 300px
                      "text-article-2 "
-                     "article-3" 
+                     "article-3" 300px /
                      "text-article-3"
                      "nuew-1 "
                      "text-article-1-2 "
@@ -183,6 +118,7 @@ body{
                       "text-article-2-2"
                       "nuew-3"
                      "text-article-3-2";
-    }
-    }
+    }}
+
+     
  
