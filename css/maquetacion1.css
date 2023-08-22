@@ -1,8 +1,17 @@
 *{
-    margin: 10px;
+    margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+}
+.main-content{
+    width: 100%;
+    display: grid;
+    gap: 40px;
+    grid-template: "header            main-img          main-img "  600px
+                   "article-1         article-2         article-3"  auto 
+                   "article-4         article-5         article-6"  auto /
+                          1fr                1fr            1fr;  
 }
 .main-page{
     height: 120px;
@@ -13,7 +22,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template: "empty-left           main-page                   empty-right"/
-              minmax(50px, 1fr  )      minmax(1000px, 1500px)        minmax(50px, 1fr  )   ;
+              minmax(30px, 1fr  )      minmax(900px, 1000px)        minmax(30px, 1fr  )   ;
 }
 header{
     margin-top: 20px;
@@ -22,10 +31,10 @@ header{
     gap: 20px;
     display: grid;
     grid-template: "logo      main-menu  "/
-                    150px    minmax(1000px, 1fr) ;
+                    100px    minmax(900px, 1fr) ;
 }
 .logo {
-    width: 150px;
+    width: 90px;
 }
 .main-nav{
     grid-area: main-menu;
@@ -50,18 +59,8 @@ header{
 }
 .main-img{
     width: 100%;
-    height: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main-content{
-    width: 100%;
-    display: grid;
-    gap: 40px;
-    grid-template: "header            main-img          main-img "  
-                   "article-1         article-2         article-3" 
-                   "article-4         article-5         article-6";
+    height: 100vh;
+    background-color: black;
 }
 .article-1{
     grid-area: article-1;
@@ -88,8 +87,9 @@ header{
 .img-article{
     width: 100%;
     display: grid;
-    margin-left: 35px;
+    margin: 35px;
     align-items: flex-start;
+
 }
 .style-text{
     display: flex;
@@ -119,6 +119,9 @@ header{
                       "nuew-3"
                      "text-article-3-2";
     }}
+/*     img {
 
+    }
+ */
      
  
