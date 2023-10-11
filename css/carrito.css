@@ -64,6 +64,10 @@ p{
 .produc{
     margin: 0 0 0 20px;
 }
+.precio-unidad, .signo-precioUnidad{
+    font-size: 1.4em;
+    font-weight: 550;
+}
 #precioproduc{
     font-weight: 600;
 }
@@ -79,11 +83,16 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.box-cant{
     border: 2px solid rgb(103, 35, 159);
 }
 .box-minus{
     background-color: rgb(103, 35, 159);
     border-radius: 16px 0 0 16px;
+}
+.box-plus:hover, .box-minus:hover{
+    background-color: rgb(145, 101, 182);
 }
 .box-plus{
     background-color: rgb(103, 35, 159);
@@ -91,4 +100,14 @@ p{
 }
 .fa-minus, .fa-plus{
     color: white;
+}
+.buttons{
+    background-color: rgb(103, 35, 159);
+    border-radius: 16px 16px 16px 16px;
+    color: white;
+    margin: 15px;
+    padding: 12px 30px;
+}
+.buttons:hover{
+    background-color: rgb(145, 101, 182);
 }
