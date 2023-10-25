@@ -10,7 +10,7 @@ header{
   height: 60px;
   display: grid;
   grid-template: "header-logo header-enviar-a box-header-search-input header-flag-country header-identificate header-devoluciones header-carrito" 60px /
-                  150px       180px           1fr                     70px                  160px             120px               140px;
+                  150px       120px           1fr                     70px                  160px             120px               140px;
 }
 .header-logo{
   grid-area: header-logo;
@@ -83,6 +83,9 @@ border-bottom-left-radius: 8px;
 display: flex;
 align-items: center;
 height: 40px;
+background-color: rgb(230, 230, 230) ;
+color: rgb(116, 107, 107);
+border-radius: 12px 0 0 12px;
 }
 .header-todos{
 padding: 0 4px 0 15px;
@@ -90,6 +93,7 @@ font-size: .7em;
 }
 .icon-chevron{
 font-size: .7em;
+color: rgb(116, 107, 107);
 }
 .box-buscar-amazon{
 grid-area: box-buscar-amazon;
@@ -160,7 +164,7 @@ position: relative;
 margin-left: 40px;
 }
 .icon-chevron-identificate{
-color: red;
+color: white;
 font-size: .7em;
 position: relative;
 top: 3px;
