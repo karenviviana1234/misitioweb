@@ -7,10 +7,10 @@ img{
     background-repeat: no-repeat;  
 }
 .content{
-    font-family: 'Amatic SC';
+    font-family:'Tilt Neon';
     color: whitesmoke;
+    display: grid;
     justify-content: center;
-    justify-items: center;
      font-size: 1.4em;
      text-align: center;
 }
@@ -27,6 +27,14 @@ img{
          url('../fonts/amatic-sc-v24-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/amatic-sc-v24-latin-700.svg#AmaticSC') format('svg'); /* Legacy iOS */
   }
+  /* tilt-neon-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Tilt Neon';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/tilt-neon-v10-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 .container{
     border: 20px;
     text-align: center;
@@ -34,7 +42,7 @@ img{
     font-size: 16px;
 }
 .box-style{
-    font-family: 'Amatic SC';
+    font-family:'Tilt Neon';
     border: 20px;
     padding: 15px 32px;
     text-align: center;
@@ -50,4 +58,12 @@ img{
 }
 .box:hover{
     background-color: #ae72c8;
+}
+.autor{
+    background-color: #ae72c8;
+    color: rgb(255, 229, 229);
+    width: 450px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
 }
