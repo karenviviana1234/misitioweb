@@ -235,9 +235,11 @@ li {
   border: 1 solid white;
 }
 
-
-/* modal */
 .box-modal{
+  display: none;
+}
+/* modal */
+.box-modal.visible{
   position: absolute;
   top: 0;
   left: 0;
@@ -246,7 +248,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(78, 75, 75, 0.623);
+  /* background-color: rgba(78, 75, 75, 0.623); */
   z-index: 10;
 }
 .modal {
@@ -271,7 +273,7 @@ li {
    align-items: center;
 }
 .main-img-principal {
-   width: 90%;
+   width: 75%;
    height: auto;
 }
 .main-img-principal-opacity{
