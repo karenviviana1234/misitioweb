@@ -334,4 +334,108 @@ padding: 0 3px;
   object-fit: contain;
   padding: 2px;
 }
-
+.fondo{
+  margin: 20px;
+  margin-top: 70px;
+  display: grid;
+  grid-template: "imgfondo    imgprin   infoproduc precioprodu" /
+                    150px      250px     450px        300px;
+}
+.imgfondo{
+  width: 70%;
+  object-fit: contain;
+  padding: 2px;
+}
+.imgpeque{
+  margin-bottom: 10px;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 15px;
+}
+.img{
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(220,220,220,.9);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.img:hover{
+  border: 2px solid rgb(149, 155, 226);
+}
+.princi{
+  grid-area: imgprin;
+  height: 400px;
+}
+.infoproduc{
+  grid-area: infoproduc;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+.info{
+  font-size: 25px;
+  display: inline-block;
+  font-weight: 500;
+}
+.info2, .info3,.info5{
+  padding-top: 5px;
+  display: block;
+  font-size: 14px;
+}
+.info2{
+  color: rgb(24, 109, 158);
+  font-weight: 200;
+}
+.info2:hover{
+  text-decoration: underline;
+  color: rgb(170, 76, 42);
+}
+.info3{
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+.calificacione{
+  margin-left: 50px;
+  color: rgb(24, 109, 158);
+  text-decoration: none;
+}
+.calificacione:hover{
+  text-decoration: underline;
+  color: rgb(170, 76, 42);
+}
+.info4{
+  color: rgb(24, 109, 158);
+  text-decoration: none;
+  margin: 9px;
+  font-size: 15px;
+}
+.info4:hover{
+  text-decoration: underline;
+  color: rgb(170, 76, 42);
+}
+.info5{
+  font-size: 12px;
+}
+.fa-solid{
+  color: rgb(255, 164, 28); 
+}
+.precioprodu{
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.dolar{
+  font-size: 10px;
+  vertical-align: text-top;
+}
+.precio{
+  font-size: 20px;
+  font-weight: 400;
+}
+.txtdevoluciones{
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+}
