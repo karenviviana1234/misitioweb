@@ -11,9 +11,6 @@ let modal = document.getElementById("modal");
 let mainContent = document.getElementById("mainContent");
 let btnclose = document.getElementById("btnclose");
 
-window.onload = () => {
-  boxmodal.classList.remove("visible")
-}
 imgtub1.addEventListener("click",() => {
   imgMain.setAttribute("src", "img/amazon1.jpg");
 });
@@ -32,9 +29,39 @@ imgtub5.addEventListener("click",() => {
 imgtub6.addEventListener("click",() => {
   imgMain.setAttribute("src", "img/amazon6.jpg");
 });
-btnclose.addEventListener("click", function() {
+function cerrar(){
   mainContent.style.display = "none";
-});
+}
 function abrir(){
   boxmodal.classList.add("visible")
 }
+window.onload = () => {
+  boxmodal.classList.remove("visible")
+}
+
+let img1 = document.getElementById("img1");
+let img2 = document.getElementById("img2");
+let img3 = document.getElementById("img3");
+let img4 = document.getElementById("img4");
+let img5 = document.getElementById("img5");
+let img6 = document.getElementById("img6");
+let img7 = document.getElementById("img7");
+let imgprin = document.getElementById("imgprin");
+img1.addEventListener("click",() => {
+  imgprin.setAttribute("src", "img/amazon1.jpg");
+});
+img2.addEventListener("click",() => {
+  imgprin.setAttribute("src", "img/amazon2.jpg");
+});
+img3.addEventListener("click",() => {
+  imgprin.setAttribute("src", "img/amazon3.jpg");
+});
+img4.addEventListener("click",() => {
+  imgprin.setAttribute("src", "img/amazon4.jpg");
+});
+img5.addEventListener("click",() => {
+  imgprin.setAttribute("src", "img/amazon5.jpg");
+});
+img6.addEventListener("click",() => {
+  imgprin.setAttribute("src", "img/amazon6.jpg");
+});

@@ -339,12 +339,21 @@ padding: 0 3px;
   margin-top: 70px;
   display: grid;
   grid-template: "imgfondo    imgprin   infoproduc precioprodu" /
-                    150px      250px     450px        300px;
+                    150px      400px     650px        300px;
 }
 .imgfondo{
   width: 70%;
   object-fit: contain;
   padding: 2px;
+}
+.fa-arrow-up-from-bracket{
+  position: absolute;
+  margin-top: 10px;
+  left: 600px;
+  font-size: 1.2em;
+  border-radius: 50px;
+  padding: 3px 5px 3px 5px;
+  line-height: 0.8;
 }
 .imgpeque{
   margin-bottom: 10px;
@@ -367,12 +376,13 @@ padding: 0 3px;
 }
 .princi{
   grid-area: imgprin;
-  height: 400px;
+  height: 580px;
 }
 .infoproduc{
   grid-area: infoproduc;
   margin-left: 120px;
   margin-top: 20px;
+  margin-right: 50px;
 }
 .info{
   font-size: 25px;
@@ -418,13 +428,25 @@ padding: 0 3px;
 .info5{
   font-size: 12px;
 }
-.fa-solid{
+.masbajo{
+  border: none;
+  background-color: rgb(204, 12, 57);
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.ico{
   color: rgb(255, 164, 28); 
 }
 .precioprodu{
-  padding: 20px;
+  padding: 15px;
+  padding-top: 15px;
   border: 1px solid black;
   border-radius: 10px;
+  margin-left: 50px;
+  font-size: 0.9em;
+  color: rgb(66, 59, 59);
 }
 .dolar{
   font-size: 10px;
@@ -434,8 +456,115 @@ padding: 0 3px;
   font-size: 20px;
   font-weight: 400;
 }
+.entrega{
+  display: block;
+  margin-top: 5px;
+}
+
+.chev{
+  font-size: 0.7em;
+  color: gray;
+}
 .txtdevoluciones{
   display: block;
   text-decoration: none;
   font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(24, 109, 158);
+  text-decoration: none;
+  margin: 9px;
+  font-size: 15px;
+}
+.txtdevoluciones:hover{
+  text-decoration: underline;
+  color: rgb(170, 76, 42);
+}
+.lugar{
+  font-weight: 600;
+  color: rgb(132, 132, 132);
+}
+.deposito{
+  color: rgb(79, 78, 78);
+}
+.detalle{
+  color: rgb(24, 109, 158);
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  margin-top: 5px;
+
+}
+.detalle:hover{
+  text-decoration: underline;
+  color: rgb(170, 76, 42);
+}
+.hora{
+  display: block;
+  margin-top: 10px;
+}
+.dia{
+  font-weight: 600;
+  font-size: 1em;
+}
+.tiempo{
+  color: green;
+}
+.envio{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: black;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  }
+  .texto{
+    color: rgb(24, 109, 158);
+    text-decoration: none;
+    display: block;
+    font-size: 0.9em;
+  }
+  .texto:hover{
+    color: rgb(170, 76, 42);
+  }
+  .location{
+    margin-right: 9px;
+  }
+  .disponible{
+    color: green;
+    font-size: 1.3em;
+  }
+  .button1{
+    width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px ;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(255, 216, 20);
+  }
+  .button1:hover{
+    cursor: pointer;
+    background-color: rgb(224, 190, 20);
+  }
+  .button2{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 164, 28);
+  }
+  .button2:hover{
+    cursor: pointer;
+    background-color: rgb(227, 147, 27);
+  }
+.estrella{
+  color: rgb(255, 164, 28);
+  font-size: 2em;
+}
+.box-estrellas{
+  display: flex;
+  flex-direction: row;
 }

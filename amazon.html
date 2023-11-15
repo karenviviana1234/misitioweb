@@ -121,7 +121,7 @@
                     </div>
 
                     <!-- equis -->
-                    <div class="btn-close" id="btnclose">
+                    <div class="btn-close" id="btnclose" onclick="cerrar()">
                         <i class="fa-regular fa-circle-xmark"></i>
                     </div>
 
@@ -154,7 +154,8 @@
                 <img src="img/amazon7.jpg" class="imgfondo">
             </div>
         </div>
-        <div class="imgprin">
+        <div class="imgprin" id="imgprin" onclick="abrir()">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
             <img src="img/amazon1.jpg" class="princi">
         </div>
   
@@ -162,27 +163,45 @@
             <span class="info">DREAMUS BTS - Tarjeta fotográfica transparente con diseño de mapa de The Soul Special Edition</span>
             <span class="info2">Marca: DREAMUS</span>
             <span class="info3"> 
-                4.8 <i class="fa-solid fa-star"></i>
-                 <i class="fa-solid fa-star"></i>
-                 <i class="fa-solid fa-star"></i>
-                 <i class="fa-solid fa-star"></i>
-                 <i class="fa-solid fa-star"></i>
+                <div class="box-estrellas">
+                    <div class="estrella" id="estrella">
+                        <i id="star1"></i>
+                    </div>
+                    <div class="estrella">
+                        <i id="star2"></i>
+                    </div>
+                    <div class="estrella">
+                        <i id="star3"></i>
+                    </div>
+                    <div class="estrella">
+                        <i id="star4"></i>
+                    </div>
+                    <div class="estrella">
+                        <i id="star5"></i>
+                    </div>
+                </div>
                 <a href="#" class="calificacione">109 calificaciones</a></span>
             <span>| <a class="info4" href="#">10 preguntas respondidas</a></span>
             <span class="info5">100+ comprados el mes pasado</span>
             <hr>
+            <button class="masbajo">El precio más bajo en 30 días</button>
+ 
         </div>
         
         <div class="precioprodu">
             <span><span class="dolar">US$</span><span  class="precio">64</span> <span class="dolar"> 89</span></span>
-            <span><a class="txtdevoluciones" href="#">Devoluciones GRATIS</a></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span><a class="txtdevoluciones" href="#">Devoluciones GRATIS <i class="chev fa-solid fa-chevron-down"></i></a></span>
+            <span class="deposito">Sin depósito de derechos de importación y <span class="lugar">envío GRATIS</span> a Colombia <a href="#" class="detalle">Detalles <i class="chev fa-solid fa-chevron-down"></i></a></span>
+            <span class="entrega">Entrega GRATIS el <span class="dia">viernes, 24 de noviembre</span> a Colombia </span>
+            <span class="hora">O entrega más rápida el <span class="dia">miércoles, 22 de noviembre</span>. Realiza el pedido en <span class="tiempo">1 hr 39 mins</span> </span>
+            <div class="envio"><i class="location fa-solid fa-map-location"></i><a class="texto"> Enviar a Colombia</a>
+            </div>
+            <span class="disponible">Disponible</span>
+            <button class="button1">Agregar Carrito</button>
+            <button class="button2">Comprar Ahora</button>
+
         </div>
     </div>
-    <input type="submit" value="Hola" id="modal" onclick="abrir()">
     <script src="js/amazon.js"></script>
 </body>
-
 </html>
