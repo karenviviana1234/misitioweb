@@ -1,11 +1,4 @@
-.puntuaciontodo{
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-}
-.inputpun{
-  margin-bottom: 10px;
-}
+
 
 .cal-box {
     display: flex;
@@ -17,7 +10,7 @@
     width: 200px;
     height: 20px;
     border: 1px solid black;
-    border-radius: 1px;
+    border-radius: 5px;    
 }
 
 .cal > div {
@@ -25,4 +18,12 @@
     height: 20px;
     transition: 1s all linear;
     width: 0;
+}
+.btn{
+    margin-top: 10px;
+    background-color: plum;
+    border-radius: 10px;
+    padding: 8px;
+    border: none;
+    color: rgb(36, 33, 33);
 }

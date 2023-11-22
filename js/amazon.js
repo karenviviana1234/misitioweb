@@ -110,6 +110,9 @@ img5.addEventListener("mouseover",() => {
 img6.addEventListener("mouseover",() => {
   imgprin.setAttribute("src", "img/amazon6.jpg");
 });
+img7.addEventListener("mouseover",() => {
+  imgprin.setAttribute("src", "img/amazon7.jpg");
+});
 
 
 let imgtub1 = document.getElementById("imgtub1");
@@ -143,6 +146,10 @@ imgtub5.addEventListener("click",() => {
 imgtub6.addEventListener("click",() => {
   imgMain.setAttribute("src", "img/amazon6.jpg");
 });
+imgtub7.addEventListener("click",() => {
+  imgMain.setAttribute("src", "img/amazon7.jpg");
+});
+
 function cerrar(){
   mainContent.style.display = "none";
 }
@@ -152,4 +159,3 @@ function abrir(){
 window.onload = () => {
   boxmodal.classList.remove("visible")
 }
-

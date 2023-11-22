@@ -276,14 +276,6 @@ li {
    width: 75%;
    height: auto;
 }
-.main-img-principal-opacity{
-  opacity: 1;
-  width: 750px;
-  transition: opacity 300ms;
-}
-.main-img-principal:hover{
-  opacity: 0;
-}
 .img-modal1{
   width: 50%;
   height: auto;

@@ -1,39 +1,36 @@
+ let inputcinco = document.getElementById("input5")
+let inputcuatro = document.getElementById("input4")
+let inputtres = document.getElementById("input3")
+let inputdos = document.getElementById("input2")
+let inputuno = document.getElementById("input1")
+let btn = document.getElementById("btn")
+let resultado = document.getElementById("resultado")
 
-        var input_cinco = document.querySelector("#input-5")
-        var input_cuatro = document.querySelector("#input-4")
-        var input_tres = document.querySelector("#input-3")
-        var input_dos = document.querySelector("#input-2")
-        var input_uno = document.querySelector("#input-1")
-        var btn_resultado = document.querySelector("#btn-resultado")
-        var resultado = document.querySelector("#resultado")
-
-        var barra_cinco = document.querySelector("#resultado_cinco")
-        var barra_cuatro = document.querySelector("#resultado_cuatro")
-        var barra_tres = document.querySelector("#resultado_tres")
-        var barra_dos = document.querySelector("#resultado_dos")
-        var barra_uno = document.querySelector("#resultado_uno")
-        var resultado_interno;
+let barracinco = document.getElementById("resultadocinco")
+let barracuatro = document.getElementById("resultadocuatro")
+let barratres = document.getElementById("resultadotres")
+let barrados = document.getElementById("resultadodos")
+let barrauno = document.getElementById("resultadouno")
+let resultadointerno;
 
 
-        btn_resultado.addEventListener("click", function() {
-            resultado_interno = parseInt(input_cinco.value) + parseInt(input_cuatro.value) + parseInt(input_tres.value) + parseInt(input_dos.value) + parseInt(input_uno.value)
-            resultado.innerHTML = resultado_interno
+    btn.addEventListener("click", function() {
+            resultadointerno = parseInt(inputcinco.value) + parseInt(inputcuatro.value) + parseInt(inputtres.value) + parseInt(inputdos.value) + parseInt(inputuno.value)
+            resultado.innerHTML = resultadointerno
 
-            var total_cinco = parseInt(input_cinco.value) * 100 / resultado_interno
-            barra_cinco.style.width = `${total_cinco}%`
+            let totalcinco = parseInt(inputcinco.value) * 100 / resultadointerno
+            barracinco.style.width = `${totalcinco}%`
 
-            var total_cuatro = parseInt(input_cuatro.value) * 100 / resultado_interno
-            barra_cuatro.style.width = `${total_cuatro}%`
+            let totalcuatro = parseInt(inputcuatro.value) * 100 / resultadointerno
+            barracuatro.style.width = `${totalcuatro}%`
 
-            var total_tres = parseInt(input_tres.value) * 100 / resultado_interno
-            barra_tres.style.width = `${total_tres}%`
+            let totaltres = parseInt(inputtres.value) * 100 / resultadointerno
+            barratres.style.width = `${totaltres}%`
 
-            var total_dos = parseInt(input_dos.value) * 100 / resultado_interno
-            barra_dos.style.width = `${total_dos}%`
+            let totaldos = parseInt(inputdos.value) * 100 / resultadointerno
+            barrados.style.width = `${totaldos}%`
 
-            var total_uno = parseInt(input_uno.value) * 100 / resultado_interno
-            barra_uno.style.width = `${total_uno}%`
+            let totaluno = parseInt(inputuno.value) * 100 / resultadointerno
+            barrauno.style.width = `${totaluno}%`
 
         })
-
-
