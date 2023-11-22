@@ -377,7 +377,7 @@ padding: 0 3px;
 .imgprin{
   grid-area: imgprin;
   height: 580px;
-  max-width: 450px;
+  max-width: 460px;
 }
 .infoproduc{
   grid-area: infoproduc;
@@ -389,6 +389,8 @@ padding: 0 3px;
   font-size: 25px;
   display: inline-block;
   font-weight: 500;
+  margin-bottom: 9px;
+
 }
 .info2,.info5{
   display: block;
@@ -401,9 +403,6 @@ padding: 0 3px;
 .info2:hover{
   text-decoration: underline;
   color: rgb(170, 76, 42);
-}
-.info3{
-  font-weight: 200;
 }
 .calificacione{
   color: rgb(24, 109, 158);
@@ -424,6 +423,7 @@ padding: 0 3px;
 }
 .info5{
   font-size: 12px;
+  margin-top: 5px;
 }
 .masbajo{
   border: none;
@@ -560,8 +560,14 @@ padding: 0 3px;
 .estrella{
   color: rgb(255, 164, 28);
   font-size: 0.9em;
+  margin-right: 2px;
 }
 .box-estrellas{
   display: flex;
   flex-direction: row;
+}
+.info3{
+  font-weight: 200;
+  margin-right: 10px;
+  margin-bottom: 11px;
 }

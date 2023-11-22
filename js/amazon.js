@@ -3,7 +3,7 @@ let start2 = document.getElementById("start2")
 let start3 = document.getElementById("start3")
 let start4 = document.getElementById("start4")
 let start5 = document.getElementById("start5")
-let puntuacion = document.getElementById("puntuacion").innerText = 3
+let puntuacion = document.getElementById("puntuacion").innerText
     
     if(puntuacion >= 0 && puntuacion <= 0.2) {
         start1.setAttribute("class", "fa-regular fa-star")

@@ -1,0 +1,28 @@
+.puntuaciontodo{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.inputpun{
+  margin-bottom: 10px;
+}
+
+.cal-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cal {
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+.cal > div {
+    background-color: orange;
+    height: 20px;
+    transition: 1s all linear;
+    width: 0;
+}
