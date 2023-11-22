@@ -339,7 +339,7 @@ padding: 0 3px;
   margin-top: 70px;
   display: grid;
   grid-template: "imgfondo    imgprin   infoproduc precioprodu" /
-                    150px      400px     650px        300px;
+                    100px      350px     450px       400px;
 }
 .imgfondo{
   width: 70%;
@@ -374,9 +374,10 @@ padding: 0 3px;
 .img:hover{
   border: 2px solid rgb(149, 155, 226);
 }
-.princi{
+.imgprin{
   grid-area: imgprin;
   height: 580px;
+  max-width: 450px;
 }
 .infoproduc{
   grid-area: infoproduc;
@@ -562,10 +563,9 @@ padding: 0 3px;
   }
 .estrella{
   color: rgb(255, 164, 28);
-  font-size: 2em;
+  font-size: 0.9em;
 }
 .box-estrellas{
   display: flex;
   flex-direction: row;
-  background-color: black;
 }
